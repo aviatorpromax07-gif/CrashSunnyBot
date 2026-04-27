@@ -41,7 +41,17 @@ threading.Thread(target=run_dummy_server, daemon=True).start()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     chat_id = message.chat.id
-    text = "Welcome to our Bot!\n\nSend your 9,10 digit ID"
+    text = "Welcome to our Bot!\n\n🍎 Apple Win Pro – The smartest AI Bot for Apple of Fortune!
+💡 Get accurate signals, fast updates, and easy wins.
+
+👻 Powered by Ghost Chain @SPECIAL_7_9
+🎯 100% Free access
+
+Telegram Channel : @APPLE_CRASH_HACK11
+
+🔑 Use Promo Code: SPE91 to unlock premium signals 💥
+
+🚀 Start winning smartly today!\n\nSend your 9,10 digit ID"
     
     try:
         bot.send_photo(chat_id, IMAGE_URL, caption=text)
