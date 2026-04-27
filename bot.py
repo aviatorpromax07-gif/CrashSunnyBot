@@ -41,7 +41,11 @@ threading.Thread(target=run_dummy_server, daemon=True).start()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     chat_id = message.chat.id
-    text = "🍎 Apple Win Pro – The smartest AI Bot for Apple of Fortune!
+    
+    # আপনার নতুন ওয়েলকাম মেসেজ
+    text = """Welcome to our Bot!
+
+🍎 Apple Win Pro – The smartest AI Bot for Apple of Fortune!
 💡 Get accurate signals, fast updates, and easy wins.
 
 👻 Powered by Ghost Chain @SPECIAL_7_9
@@ -51,7 +55,9 @@ Telegram Channel : @APPLE_CRASH_HACK11
 
 🔑 Use Promo Code: SPE91 to unlock premium signals 💥
 
-🚀 Start winning smartly today!\n\nSend your 9,10 digit ID"
+🚀 Start winning smartly today!
+
+➡️ Send your 9,10 digit ID"""
     
     try:
         bot.send_photo(chat_id, IMAGE_URL, caption=text)
@@ -66,13 +72,16 @@ def verify_id(message):
     chat_id = message.chat.id
     user_id_input = message.text.strip()
     
+    # চেক করবে আইডিটি ৯ অথবা ১০ ডিজিটের সংখ্যা কি না
     if re.match(r'^\d{9,10}$', user_id_input):
         user_states[chat_id] = 'active'
         
+        # বাটন তৈরি করা
         markup = InlineKeyboardMarkup()
         btn_webapp = InlineKeyboardButton("Open Web App", web_app=WebAppInfo(url=WEB_APP_URL))
         btn_signal = InlineKeyboardButton("Message Signal", callback_data="get_signal")
         
+        # বাটনগুলো নিচে নিচে অ্যাড করা
         markup.add(btn_webapp)
         markup.add(btn_signal)
         
