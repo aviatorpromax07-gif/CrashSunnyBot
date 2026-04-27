@@ -15,7 +15,7 @@ ADMINS =['@SPECIAL_7_9', '@SUNNY_BRO1']
 
 # ওয়েব অ্যাপ লিংক এবং ওয়েলকাম ইমেজের লিংক
 WEB_APP_URL = 'https://crashsunny.netlify.app/'
-IMAGE_URL = 'https://img.freepik.com/free-vector/welcome-typography-design_1308-115984.jpg' 
+IMAGE_URL = 'https://i.ibb.co.com/qFmpJZqz/photo-ghost.jpg' 
 
 # ইউজারদের স্টেট সেভ রাখার ডিকশনারি
 user_states = {}
