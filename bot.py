@@ -41,7 +41,7 @@ threading.Thread(target=run_dummy_server, daemon=True).start()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     chat_id = message.chat.id
-    text = "Welcome to our Bot!\n\n🍎 Apple Win Pro – The smartest AI Bot for Apple of Fortune!
+    text = "Welcome to our Bot!\n🍎 Apple Win Pro – The smartest AI Bot for Apple of Fortune!
 💡 Get accurate signals, fast updates, and easy wins.
 
 👻 Powered by Ghost Chain @SPECIAL_7_9
